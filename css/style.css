@@ -1,13 +1,18 @@
 
 /* Google Font Class */
+@font-face {
+    font-family: 'Baskerville Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Baskerville Normal'), url('Fonts/baskvl.woff') format('woff');
+    }
 .baskerville{
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Baskerville Normal', serif;
 }
 
 /* Header Design */
 header{
     background-color: #2B3A41;
-    padding: 5px 0;
 }
 .navbar-light .navbar-nav .nav-link, .navbar-brand{
     color: #ffffff !important;
@@ -15,6 +20,7 @@ header{
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
+
 .navbar-toggler {
     padding: 8px;
     font-size: 1.25rem;
@@ -22,4 +28,11 @@ header{
     background-color: #ECBB9C;
     border-radius: 50%;
     transition: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-brand{
+        font-size: 40px;
+        font-weight: 400;
+    }
 }
