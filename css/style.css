@@ -18,16 +18,7 @@ body{
 nav{
     z-index: 99;
     padding: 20px 0;
-}
-/* Header Design */
-header{
-    color: #ffffff;
-    padding: 0 !important;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    top: 0;
-    background-color: #2B3A41;
+    overflow: hidden;
 }
 .navbar-light .navbar-nav .nav-link, .navbar-brand{
     color: #ffffff !important;
@@ -51,12 +42,31 @@ header{
     font-size: 40px;
     font-weight: 400;
 }
-
+.appointment1, .appointment2{
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    box-sizing: border-box;
+    padding: 8px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: .5s;
+}
+/* Header Design */
+header{
+    color: #ffffff;
+    padding: 0 !important;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    background-color: #2B3A41;
+    overflow: hidden;
+}
 .small-header{
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    transition: .5s;
 }
 .small-header::before{
     width: 54px;
@@ -80,7 +90,7 @@ header .btn{
     color: #ffffff;
 }
 .right-part{
-    background-image: url('../images/Banner.png');
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%), url('../images/Banner.png');
     background-size: 100% 100%;
 }
 .play-button{
@@ -99,26 +109,44 @@ header .btn{
     border-radius: 50%;
     transition: background .5s;
 }
-.play-icon-style:hover{
+.play-icon-style:hover, .appointment1:hover,.appointment2:hover{
     background: #ECBB9C;
     color: rgb(41, 22, 22);
     cursor: pointer;
 }
+
+.about-content{
+    background-color: #ffffff;
+}
 @media only screen and (max-width: 991px) {
-    header{
-        padding: 0 10px;
+    .container-fluid{
+        padding: 0 20px;
+    }
+    .appointment2{
+        display: none;
+    }
+    .height-expand{
+        padding-top: 240px;
+        transition: .5s;
     }
     .main-header {
         font-size: 72px;
         line-height: 60px;
     }
     .left-part{
-        padding: 80px 15px 0 15px;
+        padding-top: 80px;
     }
     .right-part{
         min-height: 400px;
     }
-
+    .about{
+        margin-top: 740px;
+    }
+    .about-content{
+        margin-top: 400px;
+        padding-top: 100px;
+    }
+    
 }
 @media only screen and (min-width: 992px) {
     .container-fluid{
@@ -127,6 +155,9 @@ header .btn{
     .navbar-nav .nav-item{
         padding: 0 20px;
         font-size: 20px;
+    }
+    .appointment1{
+        display: none;
     }
     header{
         height: 700px;
@@ -145,5 +176,9 @@ header .btn{
         position: absolute;
         right: 0;
         height: 100%;
+    }
+    .about-content{
+        margin-top: 560px;
+        padding-top: 150px;
     }
 }
