@@ -61,6 +61,7 @@ header{
     background-color: #2B3A41;
     overflow: hidden;
 }
+
 .small-header{
     font-size: 16px;
     text-transform: uppercase;
@@ -118,6 +119,16 @@ header .btn{
 .about-content{
     background-color: #ffffff;
 }
+.about-body{
+    height: 100%;
+}
+.flex-box-c{
+    display: flex;
+    align-items: center;
+}
+.about .small-header::before{
+    border-color: #333333;
+}
 @media only screen and (max-width: 991px) {
     .container-fluid{
         padding: 0 20px;
@@ -145,6 +156,10 @@ header .btn{
     .about-content{
         margin-top: 400px;
         padding-top: 100px;
+    }
+    .section-header{
+        font-size: 40px;
+        line-height: 48px;
     }
     
 }
@@ -180,5 +195,9 @@ header .btn{
     .about-content{
         margin-top: 560px;
         padding-top: 150px;
+    }
+    .section-header{
+        font-size: 56px;
+        line-height: 64px;
     }
 }
