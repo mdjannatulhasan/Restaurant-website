@@ -1,18 +1,21 @@
 
 /* Google Font Class */
 @font-face {
-    font-family: 'Baskerville Normal';
+    font-family: 'Baskerville BT Roman';
     font-style: normal;
     font-weight: normal;
-    src: local('Baskerville Normal'), url('Fonts/baskvl.woff') format('woff');
+    src: local('Baskerville BT Roman'), url('Fonts/BaskervilleBT.woff') format('woff');
     }
 .baskerville{
-    font-family: 'Baskerville Normal', serif;
+    font-family: 'Baskerville BT Roman', serif;
 }
-
+.dm-sans{
+    font-family: 'DM Sans', sans-serif;
+}
 /* Header Design */
 header{
     background-color: #2B3A41;
+    color: #ffffff;
 }
 .navbar-light .navbar-nav .nav-link, .navbar-brand{
     color: #ffffff !important;
@@ -29,10 +32,46 @@ header{
     border-radius: 50%;
     transition: none;
 }
-
-@media only screen and (max-width: 767px) {
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.small-header{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+.small-header::before{
+    width: 54px;
+    border-top: 1px solid #FFFFFF;
+    content: "";
+    height: 6px;
+    display: inline-block;
+    margin-right: 26px;
+}
+.main-header{
+    font-size: 72px;
+}
+header .btn{
+    border-radius: 0;
+    margin: 35px 0;
+    padding: 14px 39px 13px 37px;
+    font-weight: 700;
+}
+.light-red{
+    background-color: #ECBB9C;
+    color: #ffffff;
+}
+@media only screen and (max-width: 991px) {
+    header{
+        padding: 0 10px;
+    }
     .navbar-brand{
         font-size: 40px;
         font-weight: 400;
+    }
+    .main-header {
+        font-size: 72px;
+        line-height: 60px;
     }
 }
