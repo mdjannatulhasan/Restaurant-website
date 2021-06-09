@@ -329,6 +329,9 @@ header .btn{
         color: #333333;
         opacity: .49;
     }
+    .order-now-image{
+        min-height: 300px;
+    }
 
 }
 @media only screen and (min-width: 992px) {
