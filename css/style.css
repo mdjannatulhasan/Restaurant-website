@@ -192,17 +192,6 @@ header .btn{
     justify-content: center;
 }
 
-/* 
-.custom-icon-1{
-    padding: 20px 15px;
-}.custom-icon-2{
-    padding: 20px 15px;
-}.custom-icon-3{
-    padding: 20px 15px;
-} */
-.feature-title{
-    padding: 40px 0 20px 0;
-}
 .dining-experience .body-text{
     padding-right: 50px;
 }
@@ -266,6 +255,9 @@ header .btn{
     .appointment-contact .container-fluid{
         padding: 0 20px;
     }
+    .feature-title {
+        padding: 20px 0 20px 0;
+    }
 }
 @media only screen and (min-width: 992px) {
     .container-fluid{
@@ -309,5 +301,8 @@ header .btn{
     }
     .appointment-body{
         min-height: 400px;
+    }
+    .feature-title {
+        padding: 40px 0 20px 0;
     }
 }
