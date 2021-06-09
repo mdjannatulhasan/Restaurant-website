@@ -137,6 +137,9 @@ header .btn{
 }
 .body-text{
     color: #333333;
+    opacity: .49;
+}
+.about .body-text{
     padding: 15px 0 35px 0;
 }
 .about-body .btn-style{
@@ -160,9 +163,11 @@ header .btn{
     background: #ffffff;
     padding: 40px 0 37px 56px;
 }
-.contact-number{
+.small-title{
     font-size: 24px;
     font-weight: 700;
+}
+.contact-number{
     padding-bottom: 50px;
 }
 .time-header{
@@ -171,6 +176,43 @@ header .btn{
     opacity: .49;
     padding-bottom: 5px;
 }
+.images-wrapper-class{
+    position: relative;
+}
+.image-class img{
+    width: 100%;
+}
+.custom-icon {
+    position: absolute;
+    border-radius: 50%;
+    bottom: -7%;
+        right: 9%;
+    height: 90px;
+    width: 90px;
+    justify-content: center;
+}
+
+/* 
+.custom-icon-1{
+    padding: 20px 15px;
+}.custom-icon-2{
+    padding: 20px 15px;
+}.custom-icon-3{
+    padding: 20px 15px;
+} */
+.feature-title{
+    padding: 40px 0 20px 0;
+}
+.dining-experience .body-text{
+    padding-right: 50px;
+}
+
+@media only screen and (max-width: 575px) {
+    .custom-icon {
+        
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .container-fluid{
         padding: 0 20px;
@@ -224,7 +266,6 @@ header .btn{
     .appointment-contact .container-fluid{
         padding: 0 20px;
     }
-    
 }
 @media only screen and (min-width: 992px) {
     .container-fluid{
