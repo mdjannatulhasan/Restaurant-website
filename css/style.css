@@ -145,7 +145,7 @@ header .btn{
     background: #033030;
     color: #ffffff;
 }
-.appointment-sec .btn-style{
+.btn-style{
     padding: 8px 25px;
 }
 .appointment-contact{
@@ -237,6 +237,11 @@ header .btn{
     color: #020202;
     border: 1px solid rgba(86, 116, 130, 1);
     background: rgb(155, 150, 150);
+}
+.order-now-image{
+    background: url("../images/food-order.png") ;
+    background-size: cover;
+    height: 100%;
 }
 @media only screen and (max-width: 575px) {
     .custom-icon {
@@ -367,9 +372,9 @@ header .btn{
         padding-right: 40px;
     }
     .appointment-body{
-        min-height: 400px;
+        min-height: 350px;
     }
-    .appointment-sec .small-header{
+    .appointment-sec .small-header,.food-order .small-header{
         padding-top: 0;
     }
     .feature-title {
