@@ -131,7 +131,8 @@ header .btn{
     display: flex;
     align-items: center;
 }
-.about .small-header::before{
+.about .small-header::before,
+.dining-experience .small-header::before{
     border-color: #333333;
 }
 .body-text{
@@ -202,6 +203,9 @@ header .btn{
         font-size: 40px;
         line-height: 48px;
     }
+    .about-body .container-fluid{
+        padding-left: 0;
+    }
     .about-body .small-header{
         padding-top: 30px;
     }
@@ -210,9 +214,6 @@ header .btn{
     }
     #no-padding-small{
         padding: 0;
-    }
-    #no-padding-small .appointment-body .container-fluid{
-        padding: 0 40px;
     }
     .appointment-body{
         min-height: 300px;
