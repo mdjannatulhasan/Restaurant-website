@@ -363,4 +363,7 @@ header .btn{
     .show-on-small{
         display: none;
     }
+    .margin-bottom-small{
+        margin-bottom: 35px;
+    }
 }
