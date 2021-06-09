@@ -1,16 +1,10 @@
 
 /* Google Font Class */
-@font-face {
-    font-family: 'Baskerville BT Roman';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Baskerville BT Roman'), url('Fonts/BaskervilleBT.woff') format('woff');
+.baskerville{
+    font-family: 'Baskervville', serif;
 }
 body{
     position: relative;
-}
-.baskerville{
-    font-family: 'Baskerville BT Roman', serif;
 }
 .dm-sans{
     font-family: 'DM Sans', sans-serif;
@@ -132,7 +126,8 @@ header .btn{
     align-items: center;
 }
 .about .small-header::before,
-.dining-experience .small-header::before{
+.dining-experience .small-header::before,
+.dining-menu .small-header::before{
     border-color: #333333;
 }
 .body-text{
@@ -195,7 +190,42 @@ header .btn{
 .dining-experience .body-text{
     padding-right: 50px;
 }
-
+.nav-pills .nav-link{
+    text-align: left;
+} 
+.nav-pills .nav-link{
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background: #2B3A41;
+    border-radius: 0;
+}
+.price{
+    font-size: 40px;
+}
+.price.flex-box-c{
+    justify-content: center;
+    height: 100%;
+}
+.show-on-small .dropdown{
+    width: 100%;
+    border: 1px solid #DADADA;
+    margin-bottom: 25px;
+}
+.show-on-small .dropdown-toggle::after{
+    position: absolute;
+    right: 3%;
+    top: 40%;
+    border-top: .3em solid #333333 !important;
+}
+.show-on-small .dropdown-toggle{
+    margin: 0 !important;
+    padding: 5px 15px;
+}
 @media only screen and (max-width: 575px) {
     .custom-icon {
         
@@ -258,6 +288,28 @@ header .btn{
     .feature-title {
         padding: 20px 0 20px 0;
     }
+    .margin-top-small{
+        margin-top: 15px;
+    }
+    .hide-on-small{
+        display: none;
+    }
+    .show-on-small{
+        display: block;
+    }
+    .show-on-small .nav-pills .nav-link.active,.show-on-small .nav-pills .show>.nav-link{
+        background: transparent;
+        border-radius: 0;
+        color: #333333;
+        font-weight: normal;
+    }
+    .show-on-small .nav-pills .nav-link{
+        font-weight: normal;
+        font-size: 16px;
+        color: #333333;
+        opacity: .49;
+    }
+
 }
 @media only screen and (min-width: 992px) {
     .container-fluid{
@@ -304,5 +356,8 @@ header .btn{
     }
     .feature-title {
         padding: 40px 0 20px 0;
+    }
+    .show-on-small{
+        display: none;
     }
 }
