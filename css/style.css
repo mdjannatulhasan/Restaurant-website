@@ -291,6 +291,9 @@ header .btn{
     .margin-top-small{
         margin-top: 15px;
     }
+    .margin-bottom-small{
+        margin-bottom: 45px;
+    }
     .hide-on-small{
         display: none;
     }
