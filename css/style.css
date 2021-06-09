@@ -42,13 +42,16 @@ nav{
     font-size: 40px;
     font-weight: 400;
 }
-.appointment1, .appointment2{
+.btn-style{
     border: 1px solid rgba(255, 255, 255, 0.295743);
     box-sizing: border-box;
     padding: 8px 10px;
     color: #ffffff;
     text-decoration: none;
     transition: .5s;
+}
+.appointment1, .appointment2{
+    border: 1px solid rgba(255, 255, 255, 0.295743);
 }
 /* Header Design */
 header{
@@ -58,8 +61,10 @@ header{
     width: 100%;
     z-index: -1;
     top: 0;
-    background-color: #2B3A41;
     overflow: hidden;
+}
+.dark-bg{
+    background-color: #2B3A41;
 }
 
 .small-header{
@@ -129,6 +134,21 @@ header .btn{
 .about .small-header::before{
     border-color: #333333;
 }
+.body-text{
+    color: #333333;
+    padding: 15px 0 35px 0;
+}
+.about-body .btn-style{
+    background: #567482;
+    padding: 8px 25px;
+}
+.about-body .btn-style:hover{
+    background: #033030;
+    color: #ffffff;
+}
+.appointment-sec .btn-style{
+    padding: 8px 25px;
+}
 @media only screen and (max-width: 991px) {
     .container-fluid{
         padding: 0 20px;
@@ -161,7 +181,21 @@ header .btn{
         font-size: 40px;
         line-height: 48px;
     }
-    
+    .about-body .small-header{
+        padding-top: 30px;
+    }
+    .body-text{
+        font-size: 15px;
+    }
+    #no-padding-small{
+        padding: 0;
+    }
+    #no-padding-small .container-fluid{
+        padding: 0 40px;
+    }
+    .appointment-body{
+        min-height: 300px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .container-fluid{
@@ -199,5 +233,8 @@ header .btn{
     .section-header{
         font-size: 56px;
         line-height: 64px;
+    }
+    .about-body .container-fluid{
+        padding-right: 40px;
     }
 }
