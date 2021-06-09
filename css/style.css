@@ -149,6 +149,27 @@ header .btn{
 .appointment-sec .btn-style{
     padding: 8px 25px;
 }
+.appointment-contact{
+    background: url("../images/reserve.png") ;
+    background-size: cover;
+    height: 100%;
+}
+
+.white-bg{
+    background: #ffffff;
+    padding: 40px 0 37px 56px;
+}
+.contact-number{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.time-header{
+    font-size: 14px;
+    color: #333333;
+    opacity: .49;
+    padding-bottom: 5px;
+}
 @media only screen and (max-width: 991px) {
     .container-fluid{
         padding: 0 20px;
@@ -190,12 +211,19 @@ header .btn{
     #no-padding-small{
         padding: 0;
     }
-    #no-padding-small .container-fluid{
+    #no-padding-small .appointment-body .container-fluid{
         padding: 0 40px;
     }
     .appointment-body{
         min-height: 300px;
     }
+    .appointment-contact{
+        min-height: 340px;
+    }
+    .appointment-contact .container-fluid{
+        padding: 0 20px;
+    }
+    
 }
 @media only screen and (min-width: 992px) {
     .container-fluid{
@@ -236,5 +264,8 @@ header .btn{
     }
     .about-body .container-fluid{
         padding-right: 40px;
+    }
+    .appointment-body{
+        min-height: 400px;
     }
 }
