@@ -118,7 +118,7 @@ header .btn{
 .about-content{
     background-color: #ffffff;
 }
-.about-body,.chef-sec-body{
+.about-body,.chef-sec-body,.reviews-sec-body{
     height: 100%;
 }
 .flex-box-c{
@@ -132,7 +132,9 @@ header .btn{
     color: #333333;
     opacity: .49;
 }
-.about .body-text, .chef-sec-body .body-text{
+.about .body-text,
+.chef-sec-body .body-text,
+.reviews-sec-body .body-text{
     padding: 15px 0 35px 0;
 }
 .about-body .btn-style{
@@ -282,11 +284,36 @@ header .btn{
     outline: none;
 }
 
-
-@media only screen and (max-width: 575px) {
-    .custom-icon {
-        
-    }
+.reviews{
+    padding: 48px 55px;
+}
+.customer-review{
+    font-size: 20px;
+    line-height: 32px;
+}
+.filled-star{
+    color: #ECBB9C;
+}
+.blank-star{
+    color: #ffffff;
+    opacity: .16;
+}
+.slider-controls{
+    background: transparent;
+    color: #567482;
+    border: 1px solid rgba(86, 116, 130, 0.501019);
+    border-radius: 50%;
+    padding: 5px 12px;
+    margin-right: 10px;
+}
+.slider-controls:hover{
+    background: #567482;
+    color: #ffffff;
+    transition: .7s;
+}
+.show-on-small .carousel-controls{
+    text-align: center;
+    margin-top:20px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -414,7 +441,9 @@ header .btn{
         font-size: 56px;
         line-height: 64px;
     }
-    .about-body .container-fluid{
+    .about-body .container-fluid,
+    .chef-sec-body .container-fluid,
+    .reviews-sec-body .container-fluid{
         padding-right: 40px;
     }
     .appointment-body{
