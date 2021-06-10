@@ -241,7 +241,18 @@ header .btn{
     background-size: cover;
     height: 100%;
 }
-
+.img-overlay-class{
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.50);
+    color: #ffffff;
+}
 
 .single-item {
     padding: 15px;
