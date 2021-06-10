@@ -354,6 +354,7 @@ footer i{
 hr{
     border:1px solid #ffffff;
     margin-top: 40px;
+    opacity: .16;
 }
 .copyright-part{
     padding: 25px 0 35px 0;
