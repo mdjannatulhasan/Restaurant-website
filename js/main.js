@@ -6,5 +6,7 @@ $(document).ready(function(){
         var x = $(this).text();
         document.getElementById("dropdown-name").innerHTML = x;
     });
+
+    $(".owl-carousel").owlCarousel();
     
 });

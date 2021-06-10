@@ -118,23 +118,21 @@ header .btn{
 .about-content{
     background-color: #ffffff;
 }
-.about-body{
+.about-body,.chef-sec-body{
     height: 100%;
 }
 .flex-box-c{
     display: flex;
     align-items: center;
 }
-.about .small-header::before,
-.dining-experience .small-header::before,
-.dining-menu .small-header::before{
+.dark-before .small-header::before{
     border-color: #333333;
 }
 .body-text{
     color: #333333;
     opacity: .49;
 }
-.about .body-text{
+.about .body-text, .chef-sec-body .body-text{
     padding: 15px 0 35px 0;
 }
 .about-body .btn-style{
@@ -281,10 +279,10 @@ header .btn{
         font-size: 40px;
         line-height: 48px;
     }
-    .about-body .container-fluid{
+    .about-body .container-fluid, .chef-sec-body .container-fluid{
         padding-left: 0;
     }
-    .about-body .small-header{
+    .about-body .small-header, .our-chef .small-header{
         padding-top: 30px;
     }
     .body-text{
@@ -388,5 +386,8 @@ header .btn{
     }
     .margin-bottom-small{
         margin-bottom: 35px;
+    }
+    .our-chef{
+        padding: 200px 0;
     }
 }
