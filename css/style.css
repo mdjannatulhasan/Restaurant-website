@@ -406,7 +406,7 @@ hr{
     .body-text{
         font-size: 15px;
     }
-    #no-padding-small,#no-padding-small2{
+    #no-padding-small,#no-padding-small2,#no-padding-small3{
         padding: 0;
     }
     .appointment-body{

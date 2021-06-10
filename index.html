@@ -92,9 +92,9 @@
                                     <div class="small-header pt-5 pb-2 mt-2 dm-sans">
                                         About
                                     </div>
-                                    <div class="section-header baskerville">
+                                    <h2 class="section-header baskerville">
                                         Making The Delicious Food
-                                    </div>
+                                    </h2>
                                     <div class="body-text">
                                         Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language. Separated they live in Bookmarksgrove right at the coast.
                                     </div>
@@ -119,9 +119,9 @@
                             <div class="small-header pb-xxl-3 pb-xl-3 pb-lg-3 pb-md-0 dm-sans">
                                 Appointment
                             </div>
-                            <div class="section-header baskerville pb-4 mb-3">
+                            <h2 class="section-header baskerville pb-4 mb-3">
                                 Reservation
-                            </div>
+                            </h2>
                             <a href="#" class="btn-style dm-sans">Contact Us</a>
                         </div>
                     </div>
@@ -153,9 +153,9 @@
                         <div class="small-header pb-xxl-3 pb-xl-3 pb-lg-3 pb-md-0 dm-sans">
                             Features
                         </div>
-                        <div class="section-header baskerville pb-4 mb-3">
+                        <h2 class="section-header baskerville pb-4 mb-3">
                             First-Class Dining Experience
-                        </div>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -230,9 +230,9 @@
                         <div class="small-header pb-xxl-3 pb-xl-3 pb-lg-3 pb-md-0 dm-sans">
                             Menu
                         </div>
-                        <div class="section-header baskerville pb-4 mb-3">
+                        <h2 class="section-header baskerville pb-4 mb-3">
                             Our Delightful <br> Menu Offers
-                        </div>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -240,20 +240,20 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="nav flex-column nav-pills me-5 hide-on-small" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#Meat" type="button" role="tab" aria-selected="true">Meat</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Fish" type="button" role="tab" aria-selected="false">Fish</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Bakery" type="button" role="tab" aria-selected="false">Bakery</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Drinks" type="button" role="tab" aria-selected="false">Drinks</button>
                         </div>
                         <div class="show-on-small">
                             <ul class="nav nav-pills">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" id="dropdown-name" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Meat</a>
-                                    <ul class="dropdown-menu">
-                                        <li><button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#Meat" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Meat</button></li>
-                                        <li><button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#Fish" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Fish</button></li>
-                                        <li><button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#Bakery" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Bakery</button></li>
-                                        <li><button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#Drinks" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Drinks</button></li>
+                                    <ul class="dropdown-menu" role="tablist">
+                                        <li><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#Meat" type="button" role="tab" aria-selected="true">Meat</button></li>
+                                        <li><button class="nav-link" id="meat2" data-bs-toggle="pill" data-bs-target="#Fish" type="button" role="tab" aria-selected="false">Fish</button></li>
+                                        <li><button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#Bakery" type="button" role="tab" aria-selected="false">Bakery</button></li>
+                                        <li><button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#Drinks" type="button" role="tab" aria-selected="false">Drinks</button></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -262,7 +262,7 @@
                     
                     <div class="col-lg-8">
                         <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="Meat" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="tab-pane fade show active" id="Meat" role="tabpanel" >
                                 <!-- Single Item Start -->
                                 <div class="row margin-bottom-small">
                                     <div class="col-lg-4">
@@ -376,7 +376,7 @@
                                 </div>
                                 <!-- Single Item End -->
                             </div>
-                            <div class="tab-pane fade" id="Fish" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="tab-pane fade" id="Fish" role="tabpanel">
                                 <!-- Single Item Start -->
                                 <div class="row margin-bottom-small">
                                     <div class="col-lg-4">
@@ -492,7 +492,7 @@
                                 </div>
                                 <!-- Single Item End -->
                             </div>
-                            <div class="tab-pane fade" id="Bakery" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="tab-pane fade" id="Bakery" role="tabpanel">
                                 <!-- Single Item Start -->
                                 <div class="row margin-bottom-small">
                                     <div class="col-lg-4">
@@ -561,7 +561,7 @@
                                 </div>
                                 <!-- Single Item End -->
                             </div>
-                            <div class="tab-pane fade" id="Drinks" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="tab-pane fade" id="Drinks" role="tabpanel">
                                 <!-- Single Item Start -->
                                 <div class="row margin-bottom-small">
                                     <div class="col-lg-4">
@@ -609,7 +609,7 @@
                                 <!-- Single Item End -->
                             </div>
                         </div>
-                        <div class="flex-box-c">
+                        <div class="text-center mt-5">
                             <a class="btn-style">
                                 Full Menu
                             </a>
@@ -622,7 +622,7 @@
     <!-- Menu Section End -->
     
     <section class="food-order pt-5 mt-4 text-white">
-        <div class="container-fluid" id="no-padding-small">
+        <div class="container-fluid" id="no-padding-small3">
             <div class="row gx-0">
                 <div class="col-lg-6">
                     <div class="appointment-body dark-bg flex-box-c">
@@ -630,16 +630,16 @@
                             <div class="small-header pb-xxl-3 pb-xl-3 pb-lg-3 pb-md-0 dm-sans">
                                 Delivery
                             </div>
-                            <div class="section-header baskerville pb-4 mb-3">
+                            <h2 class="section-header baskerville pb-4 mb-3">
                                 Order Now
-                            </div>
+                            </h2>
                             <a href="#" class="btn-style dm-sans">Contact Us</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="order-now-image flex-box-c text-dark">
-                        <div class="container-fluid" id="custom-fluid-padding">
+                        <div class="container-fluid" id="custom-fluid-padding2">
                             
                         </div>
                     </div>
@@ -663,9 +663,9 @@
                                 <div class="small-header pb-xxl-3 pb-xl-3 pb-lg-3 pb-md-0 dm-sans">
                                     Our Chef
                                 </div>
-                                <div class="section-header baskerville">
+                                <h2 class="section-header baskerville">
                                     Svyatoslav <br> Taushev
-                                </div>
+                                </h2>
                                 <div class="body-text">
                                     "There live the blind texts. Separated they live in right at the coast of the Semantics, a large language ocean. Flows by their place and supplies it with the necessary regelialia."
                                 </div>
@@ -689,9 +689,9 @@
                         <div class="small-header pb-xxl-3 pb-xl-3 pb-lg-3 pb-md-0 dm-sans">
                             Book A table
                         </div>
-                        <div class="section-header baskerville pb-4 mb-3">
+                        <h2 class="section-header baskerville pb-4 mb-3">
                             Upcoming <br> Events
-                        </div>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -936,9 +936,9 @@
                             <div class="small-header pb-xxl-3 pb-xl-3 pb-lg-3 pb-md-0 dm-sans">
                                 Testimonials
                             </div>
-                            <div class="section-header baskerville">
+                            <h2 class="section-header baskerville">
                                 Customer <br> Reviews
-                            </div>
+                            </h2>
                             <div class="body-text">
                                 Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language. Separated they live in Bookmarksgrove right at the coast.
                             </div>
@@ -968,10 +968,10 @@
                         <div class="small-header pb-xxl-3 pb-xl-3 pb-lg-3 pb-md-0 dm-sans">
                             BLOG
                         </div>
-                        <div class="section-header baskerville pb-4 mb-3">
+                        <h2 class="section-header baskerville pb-4 mb-3">
                             Our <br>
                             Articles
-                        </div>
+                        </h2>
                     </div>
                     <div class="col-lg-6">
                         <div class="see-all">
@@ -1080,9 +1080,9 @@
                             <div class="small-header pb-xxl-3 pb-xl-3 pb-lg-3 pb-md-0 dm-sans">
                                 Appointment
                             </div>
-                            <div class="section-header baskerville pb-4 mb-3">
+                            <h2 class="section-header baskerville pb-4 mb-3">
                                 +1 (234) 567-89-02
-                            </div>
+                            </h2>
                             <span class="time-header text-white dm-sans">Opening Hours</span><br>
                             <span class="time dm-sans">9:00am – 10:00pm</span>
                             
@@ -1095,9 +1095,9 @@
                             <div class="small-header pb-xxl-3 pb-xl-3 pb-lg-3 pb-md-0 dm-sans">
                                 Delivery
                             </div>
-                            <div class="section-header baskerville pb-4 mb-3">
+                            <h2 class="section-header baskerville pb-4 mb-3">
                                 Order Now
-                            </div>
+                            </h2>
                             <a href="#" class="btn-style dm-sans">Contact Us</a>
                         </div>
                     </div>
