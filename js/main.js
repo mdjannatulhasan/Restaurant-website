@@ -6,7 +6,30 @@ $(document).ready(function(){
         var x = $(this).text();
         document.getElementById("dropdown-name").innerHTML = x;
     });
-
-    $(".owl-carousel").owlCarousel();
     
+    $(window).on('load',function(){
+        $(".owl-carousel-2").owlCarousel({
+            loop: true,
+            margin:30,
+            dots:true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                576:{
+                    items:1
+                },
+                768:{
+                    items:2
+                },
+                992:{
+                    items:3,
+                    autoplay:false
+                }
+            }
+        });
+    })
 });

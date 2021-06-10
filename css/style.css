@@ -241,6 +241,37 @@ header .btn{
     background-size: cover;
     height: 100%;
 }
+
+
+.single-item {
+    padding: 15px;
+}
+.owl-theme .owl-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.owl-theme .owl-dots .owl-dot span{
+    width: 8px;
+    height: 8px;
+    margin:5px 7px;
+    background:#D9D9D9;
+    display:block;
+    border-radius: 0;
+}
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #567482;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background: #567482;
+    width: 16px;
+    height: 16px;
+}
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+
 @media only screen and (max-width: 575px) {
     .custom-icon {
         
