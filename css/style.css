@@ -489,6 +489,9 @@ hr{
         right: 0;
         height: 100%;
     }
+    .small-header{
+        padding-top: 30px;
+    }
     .about-content{
         margin-top: 560px;
         padding-top: 150px;
