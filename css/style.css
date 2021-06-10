@@ -1,14 +1,61 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Created By:
+        Shah Muhammad Jannatul Hasan
+        website: https://smmunna.host
 
-/* Google Font Class */
+            © All rights Reserved
+
+    Prepeared for interview at Netmark.no
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Table of Contents:
+
+        1. Google Font Class
+        2. Body
+        3. Navbar design
+            ~ Navbar toggler Icon
+        4. Common Button class design (.btn-style)
+        5. Header Section Design
+            ~ Small Header Section Design (Common Class .small-header)
+            ~ Header Image Part
+            ~ Header Play Icon
+        6. About , Appointment, Testimonial Section Design
+            ~ Common before border color Class(.dark-before)
+            ~ Common Text Class (.body-text)
+        7. Appointment Section
+            ~ White background Class
+            ~ Custom Small Title Class
+        8. Dining Experience Section
+            ~ Dining Section Side Nav with Tab
+            ~ Dining menu See All button
+        9. Delivery Section
+        10. Event Section with OWL Carousel
+        11. Testimonial Section with bootstrap Slider
+            ~ See all Articles button
+        12. Footer Section with footer menu
+        13. Media queries
+            ~ For two breakpoints
+        
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+/******* 1. Google Font Class ********/
 .baskerville{
     font-family: 'Baskervville', serif;
-}
-body{
-    position: relative;
 }
 .dm-sans{
     font-family: 'DM Sans', sans-serif;
 }
+
+
+/********* 2. Body *********/
+body{
+    position: relative;
+}
+
+
+
+/******* 3. Navbar Design ********/
 nav{
     z-index: 99;
     padding: 20px 0;
@@ -17,10 +64,10 @@ nav{
 .navbar-light .navbar-nav .nav-link, .navbar-brand{
     color: #ffffff !important;
 }
+/********** Navbar toggler Icon **********/
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
-
 .navbar-toggler {
     padding: 8px;
     font-size: 1.25rem;
@@ -36,6 +83,10 @@ nav{
     font-size: 40px;
     font-weight: 400;
 }
+
+
+
+/********** 4. Common Button class design create **********/
 .btn-style{
     border: 1px solid rgba(255, 255, 255, 0.295743);
     box-sizing: border-box;
@@ -47,7 +98,10 @@ nav{
 .appointment1, .appointment2{
     border: 1px solid rgba(255, 255, 255, 0.295743);
 }
-/* Header Design */
+
+
+
+/******* 5. Header Section Design *******/
 header{
     color: #ffffff;
     padding: 0 !important;
@@ -61,6 +115,7 @@ header{
     background-color: #2B3A41;
 }
 
+/******* Small Header Section Design *******/
 .small-header{
     font-size: 16px;
     text-transform: uppercase;
@@ -89,10 +144,13 @@ header .btn{
     background-color: #ECBB9C;
     color: #ffffff;
 }
+/* ******** Header Image Part ********** */
 .right-part{
     background-image: linear-gradient(90deg, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%), url('../images/Banner.png');
     background-size: 100% 100%;
 }
+
+/* ******** Header Play Icon ********** */
 .play-button{
     display: flex;
     justify-content: center;
@@ -115,6 +173,10 @@ header .btn{
     cursor: pointer;
 }
 
+
+
+/* ******** 6. About , Appointment, Testimonial Section Design ********** */
+
 .about-content{
     background-color: #ffffff;
 }
@@ -126,9 +188,13 @@ header .btn{
     height: 100%;
     align-items: center;
 }
+
+/* ********** Common before border color Class ************* */
 .dark-before .small-header::before{
     border-color: #333333;
 }
+
+/* ********** Common Text Class ************* */
 .body-text{
     color: #333333;
     opacity: .49;
@@ -149,16 +215,21 @@ header .btn{
 .btn-style{
     padding: 8px 25px;
 }
+
+/* ********** 7. Appointment Section ********* */
 .appointment-contact{
     background: url("../images/reserve.png") ;
     background-size: cover;
     height: 100%;
 }
 
+/* ***** White background Class **** */
 .white-bg{
     background: #ffffff;
     padding: 40px 0 37px 56px;
 }
+
+/* ******* Custom Small Title Class******** */
 .small-title{
     font-size: 24px;
     font-weight: 700;
@@ -172,6 +243,11 @@ header .btn{
     opacity: .49;
     padding-bottom: 5px;
 }
+
+
+
+
+/* *********** 8. Dining Experience Section ************** */
 .images-wrapper-class{
     position: relative;
 }
@@ -187,10 +263,11 @@ header .btn{
     width: 90px;
     justify-content: center;
 }
-
 .dining-experience .body-text{
     padding-right: 50px;
 }
+
+/* ********** Dining Section Side Nav with Tab ************ */
 .nav-pills .nav-link{
     text-align: left;
 } 
@@ -205,6 +282,7 @@ header .btn{
     background: #2B3A41;
     border-radius: 0;
 }
+
 .price{
     font-size: 40px;
 }
@@ -227,6 +305,8 @@ header .btn{
     margin: 0 !important;
     padding: 5px 15px;
 }
+
+/********* Dining menu See All button *********/
 .dining-menu .btn-style, .see-all .btn-style, #another-appointment-sec .btn-style{
     color: #567482;
     border: 1px solid rgba(86, 116, 130, 0.501019);
@@ -239,6 +319,8 @@ header .btn{
     border: 1px solid rgba(86, 116, 130, 1);
     background: rgb(155, 150, 150);
 }
+
+/* ********* 9. Delivery Section ******** */
 .order-now-image{
     background: url("../images/food-order.png") ;
     background-size: cover;
@@ -257,6 +339,9 @@ header .btn{
     color: #ffffff;
 }
 
+
+
+/* *********** 10. Event Section with OWL Carousel ************* */
 .single-item {
     padding: 15px;
 }
@@ -285,6 +370,10 @@ header .btn{
     outline: none;
 }
 
+
+
+
+/* ******** 11. Testimonial Section with bootstrap Slider ********* */
 .reviews{
     padding: 48px 55px;
 }
@@ -316,6 +405,8 @@ header .btn{
     text-align: center;
     margin-top:20px;
 }
+
+/* ************ See all Articles button ************** */
 .see-all{
     display: flex;
     height: 100%;
@@ -327,6 +418,10 @@ header .btn{
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+
+
+/* ************ 12. Footer Section with footer menu ************ */
 footer{
     background: #1B262A;
 }
@@ -362,6 +457,10 @@ hr{
 .copyright{
     opacity: .50;
 }
+
+
+
+/* ************** 13. Media queries ************** */
 @media only screen and (max-width: 991px) {
     .container-fluid{
         padding: 0 20px;
