@@ -567,6 +567,9 @@ hr{
         padding: 0 100px;
         max-width: 1380px;
     }
+    .new-cont{
+        padding: 10% 34% 0;
+    }
     .navbar-nav .nav-item{
         padding: 0 20px;
         font-size: 20px;
