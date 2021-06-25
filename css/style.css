@@ -1,40 +1,40 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                Created By:
-        Shah Muhammad Jannatul Hasan
-        website: https://smmunna.host
+Created By:
+Shah Muhammad Jannatul Hasan
+website: https://smmunna.host
 
-            © All rights Reserved
+© All rights Reserved
 
-    Prepeared for interview at Netmark.no
+Prepeared for interview at Netmark.no
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            Table of Contents:
+Table of Contents:
 
-        1. Google Font Class
-        2. Body
-        3. Navbar design
-            ~ Navbar toggler Icon
-        4. Common Button class design (.btn-style)
-        5. Header Section Design
-            ~ Small Header Section Design (Common Class .small-header)
-            ~ Header Image Part
-            ~ Header Play Icon
-        6. About , Appointment, Testimonial Section Design
-            ~ Common before border color Class(.dark-before)
-            ~ Common Text Class (.body-text)
-        7. Appointment Section
-            ~ White background Class
-            ~ Custom Small Title Class
-        8. Dining Experience Section
-            ~ Dining Section Side Nav with Tab
-            ~ Dining menu See All button
-        9. Delivery Section
-        10. Event Section with OWL Carousel
-        11. Testimonial Section with bootstrap Slider
-            ~ See all Articles button
-        12. Footer Section with footer menu
-        13. Media queries
-            ~ For two breakpoints
-        
+1. Google Font Class
+2. Body
+3. Navbar design
+~ Navbar toggler Icon
+4. Common Button class design (.btn-style)
+5. Header Section Design
+~ Small Header Section Design (Common Class .small-header)
+~ Header Image Part
+~ Header Play Icon
+6. About , Appointment, Testimonial Section Design
+~ Common before border color Class(.dark-before)
+~ Common Text Class (.body-text)
+7. Appointment Section
+~ White background Class
+~ Custom Small Title Class
+8. Dining Experience Section
+~ Dining Section Side Nav with Tab
+~ Dining menu See All button
+9. Delivery Section
+10. Event Section with OWL Carousel
+11. Testimonial Section with bootstrap Slider
+~ See all Articles button
+12. Footer Section with footer menu
+13. Media queries
+~ For two breakpoints
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
@@ -568,7 +568,9 @@ hr{
         max-width: 1380px !important;
     }
     .new-cont{
-        padding: 10% 34% 0;
+        position: absolute;
+        top: 19%;
+        right: 15%;
     }
     .navbar-nav .nav-item{
         padding: 0 20px;
