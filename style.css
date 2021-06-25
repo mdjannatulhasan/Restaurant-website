@@ -1,0 +1,155 @@
+
+/******* 1. Google Font Class ********/
+.baskerville{
+    font-family: 'Baskervville', serif;
+}
+.dm-sans{
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/********* 2. Body *********/
+body{
+    position: relative;
+}
+
+
+
+.flex-box-c{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+/* ********** Common before border color Class ************* */
+.dark-before .small-header::before{
+    border-color: #333333;
+}
+
+/* ******* Custom Small Title Class******** */
+.small-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.contact-number{
+    padding-bottom: 50px;
+}
+.time-header{
+    font-size: 14px;
+    color: #333333;
+    opacity: .49;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+/* ********** Dining Section Side Nav with Tab ************ */
+.nav-pills .nav-link{
+    text-align: left;
+} 
+.nav-pills .nav-link{
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background: #2B3A41;
+    border-radius: 0;
+}
+
+.price{
+    font-size: 40px;
+}
+.price.flex-box-c{
+    justify-content: center;
+    height: 100%;
+}
+.show-on-small .dropdown{
+    width: 100%;
+    border: 1px solid #DADADA;
+    margin-bottom: 25px;
+}
+.show-on-small .dropdown-toggle::after{
+    position: absolute;
+    right: 3%;
+    top: 40%;
+    border-top: .3em solid #333333 !important;
+}
+.show-on-small .dropdown-toggle{
+    margin: 0 !important;
+    padding: 5px 15px;
+}
+
+
+/* ************** 13. Media queries ************** */
+@media only screen and (max-width: 991px) {
+    .container-fluid{
+        padding: 0 20px;
+    }
+    .section-header{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    #no-padding-small,#no-padding-small2,#no-padding-small3{
+        padding: 0;
+    }
+    .appointment-body{
+        min-height: 300px;
+    }
+    .feature-title {
+        padding: 20px 0 20px 0;
+    }
+    .margin-top-small{
+        margin-top: 15px;
+    }
+    .margin-bottom-small{
+        margin-bottom: 45px;
+    }
+    .hide-on-small{
+        display: none;
+    }
+    .show-on-small{
+        display: block;
+    }
+    .show-on-small .nav-pills .nav-link.active,.show-on-small .nav-pills .show>.nav-link{
+        background: transparent;
+        border-radius: 0;
+        color: #333333;
+        font-weight: normal;
+    }
+    .show-on-small .nav-pills .nav-link{
+        font-weight: normal;
+        font-size: 16px;
+        color: #333333;
+        opacity: .49;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .container-fluid{
+        padding: 0 100px;
+    }
+    .small-header{
+        padding-top: 30px;
+    }
+    .about-content{
+        margin-top: 560px;
+        padding-top: 150px;
+    }
+    .section-header{
+        font-size: 56px;
+        line-height: 64px;
+    }
+    .feature-title {
+        padding: 40px 0 20px 0;
+    }
+    .show-on-small{
+        display: none;
+    }
+    .margin-bottom-small{
+        margin-bottom: 35px;
+    }
+}
